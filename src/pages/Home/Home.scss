@@ -1,15 +1,18 @@
-.home{
-  &-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  &__content{
-    border: 1px solid;
-    width: 70%;
-    margin: 0 auto;
-    padding: 10vw;
-    text-align: center;
+@import "/src/styles/global.scss";
+
+.home {
+  margin: 110vh 1vw 100vh;
+}
+
+.bottom-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__image {
+    width: VW(640);
+    height: VW(256);
+
+    clip-path: inset(100%);
   }
 }

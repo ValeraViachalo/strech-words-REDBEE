@@ -22,19 +22,6 @@ function App() {
           index: true,
           element: <Home />,
         },
-        {
-          path: 'blog',
-          element: <Blog />,
-        },
-        {
-          path: 'blogs',
-          children: [
-            {
-              path: ":blogId?",
-              element: <BlogDetails />,
-            },
-          ],
-        }
       ],
     },
     {
@@ -49,7 +36,6 @@ function App() {
     <QueryClientProvider client={queryC}>
       <main>
         <ScrollProvider>
-          <Header />
           
           <AnimatePresence mode="wait" initial={false}>
               {React.cloneElement(element, { key: location.pathname })}

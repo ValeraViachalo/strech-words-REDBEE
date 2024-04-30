@@ -15,6 +15,14 @@
 }
 
 @font-face {
+  font-family: Gravity-Compressed;
+  src: url("/public/font/GravityXCompressed/ABCGravity-XCompressed.woff2")
+    format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
   font-family: Roboto;
   src: url("/public/font/Roboto/Roboto-Medium.ttf")
     format("opentype");

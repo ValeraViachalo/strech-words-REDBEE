@@ -19,3 +19,8 @@
     }
   }
 }
+
+@function VW($px, $base: $desktop) {
+  @return calc(($px / $base) * 100vw);
+}
+
